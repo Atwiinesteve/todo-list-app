@@ -8,6 +8,19 @@
  box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+ width: 7px;
+}
+
+::-webkit-scrollbar-track {
+ background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+ background-color: rgb(241, 95, 120);
+ border-radius: 50px;
+}
+
 html,
 body {
  width: 100vw;
@@ -96,9 +109,10 @@ body {
   }
 
   .todo--output {
-   height: 200px;
+   height: 198px;
    width: 100%;
    margin-top: 1rem;
+   overflow-y: auto;
 
    .output--area {
     display: flex;
@@ -107,20 +121,46 @@ body {
     width: 100%;
 
     .tasks {
-     .item {
+     
       list-style: none;
       width: 100%;
       height: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      background: rgb(248, 204, 211);
       padding: 0.5rem;
 
+      .task--area {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+      }
+      
       .task {
-       margin-right: 20rem;
-       padding: 0 1rem;
+       text-align: left;
+       width: 80%;
+       margin: 0.5rem 0;
+       padding: 0.6rem;
+       background: rgb(248, 220, 224);
        color: rgb(252, 72, 102);
+
+       .completed {
+        text-decoration: line-through;
+       }
+      }
+
+      .button--area {
+       display: flex;
+       justify-content: space-between;
+       align-items: center; 
+
+       button {
+        outline: none;
+        border: none;
+        padding: 0.7rem;
+        border: 2px solid white;
+
+        &:nth-child(2) {
+         margin-left: 6px;
+        }
+       }
       }
 
       .icons {
@@ -139,7 +179,7 @@ body {
         }
        }
       }
-     }
+     
     }
    }
   }
