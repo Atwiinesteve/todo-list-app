@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  background-image: url("/images/annie-spratt-HB-Kf9WLy_0-unsplash.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+html .container,
+body .container {
+  text-align: center;
+  width: 600px;
+  height: 400px;
+  line-height: 1.4;
+  background: rgb(255, 230, 234);
+  padding: 2rem;
+  border: 1px solid rgb(252, 197, 206);
+}
+html .container .todo--header h2,
+body .container .todo--header h2 {
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: rgb(255, 130, 151);
+  font-size: 1.7rem;
+  font-weight: bolder;
+}
+html .container .todo--input,
+body .container .todo--input {
+  margin-top: 1rem;
+}
+html .container .todo--input .input--area,
+body .container .todo--input .input--area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .container .todo--input .input--area input,
+body .container .todo--input .input--area input {
+  width: 90%;
+  padding: 0.6rem 1rem;
+  margin-right: 0.4rem;
+  border: 1px solid pink;
+  outline: none;
+}
+html .container .todo--input .input--area input:focus,
+body .container .todo--input .input--area input:focus {
+  outline: none;
+}
+html .container .todo--input .input--area input:active,
+body .container .todo--input .input--area input:active {
+  outline: none;
+}
+html .container .todo--input .input--area input[type=text],
+body .container .todo--input .input--area input[type=text] {
+  color: rgb(247, 101, 125);
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+}
+html .container .todo--input .input--area button,
+body .container .todo--input .input--area button {
+  width: 10%;
+  padding: 0.6rem 0;
+  outline: none;
+  border: 1px solid rgb(250, 89, 116);
+  background-color: rgb(255, 106, 130);
+}
+html .container .todo--input .input--area button:hover,
+body .container .todo--input .input--area button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid pink;
+}
+html .container .todo--input .input--area button:hover span .fa,
+body .container .todo--input .input--area button:hover span .fa {
+  color: pink;
+}
+html .container .todo--input .input--area button span .fa,
+body .container .todo--input .input--area button span .fa {
+  color: white;
+}
+html .container .todo--output,
+body .container .todo--output {
+  height: 200px;
+  width: 100%;
+  margin-top: 1rem;
+}
+html .container .todo--output .output--area,
+body .container .todo--output .output--area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+html .container .todo--output .output--area .tasks .item,
+body .container .todo--output .output--area .tasks .item {
+  list-style: none;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: rgb(248, 204, 211);
+  padding: 0.5rem;
+}
+html .container .todo--output .output--area .tasks .item .task,
+body .container .todo--output .output--area .tasks .item .task {
+  margin-right: 20rem;
+  padding: 0 1rem;
+  color: rgb(252, 72, 102);
+}
+html .container .todo--output .output--area .tasks .item .icons span .fa-check,
+body .container .todo--output .output--area .tasks .item .icons span .fa-check {
+  padding: 0.5rem;
+  color: rgb(255, 56, 89);
+}
+html .container .todo--output .output--area .tasks .item .icons span .fa-check:hover,
+body .container .todo--output .output--area .tasks .item .icons span .fa-check:hover {
+  cursor: pointer;
+}
+html .container .todo--output .output--area .tasks .item .icons span .fa-trash,
+body .container .todo--output .output--area .tasks .item .icons span .fa-trash {
+  padding: 0.5rem;
+  color: rgb(255, 56, 89);
+}
+html .container .todo--output .output--area .tasks .item .icons span .fa-trash:hover,
+body .container .todo--output .output--area .tasks .item .icons span .fa-trash:hover {
+  cursor: pointer;
+}

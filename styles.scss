@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+*,
+*::before,
+*::after {
+ padding: 0px;
+ margin: 0px;
+ box-sizing: border-box;
+}
+
+html,
+body {
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: 'Quicksand', sans-serif;
+ background-image: url('/images/annie-spratt-HB-Kf9WLy_0-unsplash.jpg');
+ background-position: center center;
+ background-attachment: fixed;
+ background-size: cover;
+
+ .container {
+  text-align: center;
+  width: 600px;
+  height: 400px;
+  line-height: 1.4;
+  background: rgb(255, 230, 234);
+  padding: 2rem;
+  border: 1px solid rgb(252, 197, 206);
+
+  .todo--header {
+   h2 {
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: rgb(255, 130, 151);
+    font-size: 1.7rem;
+    font-weight: bolder;
+   }
+  }
+
+  .todo--input {
+   margin-top: 1rem;
+
+   .input--area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input {
+     width: 90%;
+     padding: 0.6rem 1rem;
+     margin-right: 0.4rem;
+     border: 1px solid pink;
+     outline: none;
+
+     &:focus {
+      outline: none;
+     }
+
+     &:active {
+      outline: none;
+     }
+    }
+
+    input[type=text] {
+     color: rgb(247, 101, 125);
+     font-family: 'Quicksand', sans-serif;
+     font-weight: bolder;
+    }
+
+    button {
+     width: 10%;
+     padding: 0.6rem 0;
+     outline: none;
+     border: 1px solid rgb(250, 89, 116);
+     background-color: rgb(255, 106, 130);
+     &:hover {
+      cursor: pointer;
+      background-color: transparent;
+      border: 1px solid pink;
+
+      span {
+       .fa {
+        color: pink;
+       }
+      }
+     }
+     span {
+      .fa {
+       color: white;
+      }
+     }
+    }
+   }
+  }
+
+  .todo--output {
+   height: 200px;
+   width: 100%;
+   margin-top: 1rem;
+
+   .output--area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+
+    .tasks {
+     .item {
+      list-style: none;
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background: rgb(248, 204, 211);
+      padding: 0.5rem;
+
+      .task {
+       margin-right: 20rem;
+       padding: 0 1rem;
+       color: rgb(252, 72, 102);
+      }
+
+      .icons {
+       span .fa-check {
+        padding: 0.5rem;
+        color: rgb(255, 56, 89);
+        &:hover {
+         cursor: pointer;
+        }
+       }
+       span .fa-trash {
+        padding: 0.5rem;
+        color: rgb(255, 56, 89);
+        &:hover {
+         cursor: pointer;
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+
+}
